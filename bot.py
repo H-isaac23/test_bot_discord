@@ -3,7 +3,7 @@ import os
 from discord.ext import commands
 
 client = commands.Bot(command_prefix='!')
-token = "ODM1MDIzMTYwMDg4MDY4MDk3.YIJZ6w.Wv46oOKIunnZ3xg0aWcZBEOJM8s"
+token = os.environ.get("DISCORD_TOKEN")
 
 @client.event
 async def on_ready():
